@@ -8,7 +8,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   Widget dictionary() {
     return Container(
-      height: 200,
+      height: 150,
       decoration: BoxDecoration(
         color: Colors.orange,
         borderRadius: BorderRadius.only(
@@ -17,15 +17,7 @@ class _HomeState extends State<Home> {
       child: Column(
         children: <Widget>[
           Container(
-            alignment: Alignment.topLeft,
-            height: 50,
-            child: Icon(
-              Icons.menu,
-              size: 50,
-              color: Colors.white,
-            ),
-          ),
-          Container(
+            margin: EdgeInsets.only(top: 20),
             alignment: Alignment.center,
             height: 100,
             child: Text(
@@ -138,7 +130,8 @@ class _HomeState extends State<Home> {
             ),
           ),
           Text(" * คลิ๊กหัวข้อที่คุณสนใจ ",
-              style: TextStyle(fontSize: 12, color: Colors.white,fontFamily: 'Mali'))
+              style: TextStyle(
+                  fontSize: 12, color: Colors.white, fontFamily: 'Mali'))
         ],
       ),
     );
@@ -147,6 +140,16 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        bottomOpacity: 0.0,
+        elevation: 0.0,
+        backgroundColor: Colors.orange,
+        title: Icon(
+          Icons.menu,
+          size: 50,
+          color: Colors.white,
+        ),
+      ),
       backgroundColor: Color.fromRGBO(1, 91, 100, 1),
       body: SafeArea(
         child: ListView(
