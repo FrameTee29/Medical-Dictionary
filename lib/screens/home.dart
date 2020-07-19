@@ -52,7 +52,10 @@ class _HomeState extends State<Home> {
         child: Text(
           " * ประโยคตัวอย่าง ",
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontFamily: 'Mali'),
         ),
         onPressed: () {
           print("Click");
@@ -67,10 +70,10 @@ class _HomeState extends State<Home> {
         color: Colors.orange,
         child: Text(" * คำศัพท์เกี่ยวกับโรคต่าง ๆ ",
             style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            )),
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontFamily: 'Mali')),
         onPressed: () {
           print("Click");
         });
@@ -115,7 +118,10 @@ class _HomeState extends State<Home> {
                 children: <Widget>[
                   Text(
                       'รายงานนี้เป็นส่วนหนึ่งของรายวิชา 806 - 415 ฝึกงานคณะวิเทศศึกษา สาขาวิชาไทยศึกษา มหาวิทยาลัยสงขลาครินทร์ วิทยาเขตภูเก็ต ภาคเรียนที่ 3 ปีการศึกษา 2562',
-                      style: TextStyle(fontSize: 18, color: Colors.white)),
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontFamily: 'Mali')),
                 ],
               ))
             ],
@@ -132,7 +138,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           Text(" * คลิ๊กหัวข้อที่คุณสนใจ ",
-              style: TextStyle(fontSize: 12, color: Colors.white))
+              style: TextStyle(fontSize: 12, color: Colors.white,fontFamily: 'Mali'))
         ],
       ),
     );

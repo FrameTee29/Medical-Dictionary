@@ -61,6 +61,10 @@ flutter:
     - family: Mansalva
       fonts:
         - asset: fonts/Mansalva-Regular.ttf
+        
+    - family: Mali
+      fonts:
+        - asset: fonts/Mali-Regular.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
