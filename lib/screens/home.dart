@@ -45,17 +45,41 @@ class _HomeState extends State<Home> {
   Widget medical() {
     return Container(
       padding: EdgeInsets.all(30),
-      margin: EdgeInsets.only(top:30),
+      margin: EdgeInsets.only(top: 30),
       child: Column(
         children: <Widget>[
           Row(
-            children: <Widget>[Text("MEDICAL",style: TextStyle(color:Colors.white,fontSize:50,fontWeight: FontWeight.bold),)],
+            children: <Widget>[
+              Text(
+                "MEDICAL",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold),
+              )
+            ],
           ),
           Row(
-            children: <Widget>[Text('TERMENOLOGY',style: TextStyle(color:Colors.white,fontSize:40,fontWeight: FontWeight.bold),)],
+            children: <Widget>[
+              Text(
+                'TERMENOLOGY',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold),
+              )
+            ],
           ),
           Row(
-            children: <Widget>[],
+            children: <Widget>[
+              new Flexible(
+                  child: Column(
+                children: <Widget>[
+                  Text(
+                      'รายงานนี้เป็นส่วนหนึ่งของรายวิชา 806 - 415 ฝึกงาน'),
+                ],
+              ))
+            ],
           ),
         ],
       ),
