@@ -6,10 +6,13 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+
+
   Widget dictionary() {
     return Container(
       height: 200,
-      decoration: BoxDecoration(color: Colors.orange),
+      decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50),bottomRight: Radius.circular(50)),),
       child: Column(
         children: <Widget>[
           Container(
