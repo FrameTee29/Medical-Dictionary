@@ -6,6 +6,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+
+  //method
   Widget dictionary() {
     return Container(
       height: 150,
@@ -126,6 +129,9 @@ class _HomeState extends State<Home> {
                 sentenceEXP(),
                 vocapEXP(),
                 sentenceEXP(),
+                sentenceEXP(),
+                vocapEXP(),
+                sentenceEXP(),
               ],
             ),
           ),
@@ -137,6 +143,9 @@ class _HomeState extends State<Home> {
     );
   }
 
+
+
+// Class
   @override
   Widget build(BuildContext context) {
     return Scaffold(
