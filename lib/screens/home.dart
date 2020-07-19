@@ -48,7 +48,11 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(18.0),
             side: BorderSide(color: Colors.orange)),
         color: Colors.orange,
-        child: Text(" * ประโยคตัวอย่าง "),
+        child: Text(
+          " * ประโยคตัวอย่าง ",
+          style: TextStyle(
+              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+        ),
         onPressed: () {
           print("Click");
         });
@@ -60,7 +64,12 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(18.0),
             side: BorderSide(color: Colors.orange)),
         color: Colors.orange,
-        child: Text(" * คำศัพท์เกี่ยวกับโรคต่าง ๆ "),
+        child: Text(" * คำศัพท์เกี่ยวกับโรคต่าง ๆ ",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            )),
         onPressed: () {
           print("Click");
         });
@@ -106,9 +115,18 @@ class _HomeState extends State<Home> {
               ))
             ],
           ),
-          sentenceEXP(),
-          vocapEXP(),
-          sentenceEXP(),
+          Container(
+            margin: EdgeInsets.only(top: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                sentenceEXP(),
+                vocapEXP(),
+                sentenceEXP(),
+              ],
+            ),
+          ),
+          Text("")
         ],
       ),
     );
