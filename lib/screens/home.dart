@@ -32,8 +32,9 @@ class _HomeState extends State<Home> {
               "DICTIONARY",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 60,
+                fontSize: 50,
                 fontWeight: FontWeight.bold,
+                fontFamily: 'Mansalva',
               ),
             ),
           )
@@ -86,9 +87,11 @@ class _HomeState extends State<Home> {
               Text(
                 "MEDICAL",
                 style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 50,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.white,
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Mansalva',
+                ),
               )
             ],
           ),
@@ -97,9 +100,11 @@ class _HomeState extends State<Home> {
               Text(
                 'TERMENOLOGY',
                 style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.white,
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Mansalva',
+                ),
               )
             ],
           ),
@@ -126,7 +131,8 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-          Text("")
+          Text(" * คลิ๊กหัวข้อที่คุณสนใจ ",
+              style: TextStyle(fontSize: 12, color: Colors.white))
         ],
       ),
     );
