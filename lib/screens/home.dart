@@ -42,6 +42,24 @@ class _HomeState extends State<Home> {
     );
   }
 
+  Widget sentenceEXP() {
+    return RaisedButton(
+        color: Colors.orange,
+        child: Text(" * ประโยคตัวอย่าง "),
+        onPressed: (){
+          print("Click");
+        });
+  }
+
+  Widget vocapEXP() {
+    return RaisedButton(
+        color: Colors.orange,
+        child: Text(" * คำศัพท์เกี่ยวกับโรคต่าง ๆ "),
+        onPressed: (){
+          print("Click");
+        });
+  }
+
   Widget medical() {
     return Container(
       padding: EdgeInsets.all(30),
@@ -82,26 +100,9 @@ class _HomeState extends State<Home> {
               ))
             ],
           ),
-          choice(),
+          sentenceEXP()
         ],
       ),
-    );
-  }
-
-  Widget choice() {
-    return Center(
-      child: Column(
-        children: <Widget>[
-          sentenceexp(),
-        ],
-      ),
-    );
-  }
-
-  Widget sentenceexp() {
-    return RaisedButton(
-      child: Text(" * ประโยคตัวอย่าง"),
-      onPressed: null,
     );
   }
 
@@ -110,7 +111,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(1, 91, 100, 1),
       body: SafeArea(
-        child: Column(
+        child: ListView(
           children: <Widget>[
             Row(
               children: <Widget>[
