@@ -6,19 +6,24 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
-
-
   Widget dictionary() {
     return Container(
-      height: 230,
-      decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50),bottomRight: Radius.circular(50)),),
+      height: 200,
+      decoration: BoxDecoration(
+        color: Colors.orange,
+        borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(50), bottomRight: Radius.circular(50)),
+      ),
       child: Column(
         children: <Widget>[
           Container(
             alignment: Alignment.topLeft,
             height: 50,
-            child: Icon(Icons.menu,size: 50,color: Colors.white,),
+            child: Icon(
+              Icons.menu,
+              size: 50,
+              color: Colors.white,
+            ),
           ),
           Container(
             alignment: Alignment.center,
@@ -32,6 +37,26 @@ class _HomeState extends State<Home> {
               ),
             ),
           )
+        ],
+      ),
+    );
+  }
+
+  Widget medical() {
+    return Container(
+      padding: EdgeInsets.all(30),
+      margin: EdgeInsets.only(top:30),
+      child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[Text("MEDICAL",style: TextStyle(color:Colors.white,fontSize:50,fontWeight: FontWeight.bold),)],
+          ),
+          Row(
+            children: <Widget>[Text('TERMENOLOGY',style: TextStyle(color:Colors.white,fontSize:40,fontWeight: FontWeight.bold),)],
+          ),
+          Row(
+            children: <Widget>[],
+          ),
         ],
       ),
     );
@@ -51,7 +76,8 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
-            Text("MEDICAL TERMONOLOGY")
+            medical(),
+            Text('Choice'),
           ],
         ),
       ),
