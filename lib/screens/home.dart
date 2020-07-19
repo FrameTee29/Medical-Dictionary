@@ -8,9 +8,29 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   Widget dictionary() {
     return Container(
-      height: 100,
+      height: 200,
       decoration: BoxDecoration(color: Colors.orange),
-      child: Icon(Icons.menu),
+      child: Column(
+        children: <Widget>[
+          Container(
+            alignment: Alignment.topLeft,
+            height: 50,
+            child: Icon(Icons.menu,size: 50,color: Colors.white,),
+          ),
+          Container(
+            alignment: Alignment.center,
+            height: 100,
+            child: Text(
+              "DICTIONARY",
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 60,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 
