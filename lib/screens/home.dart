@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
             child: Text(
               "DICTIONARY",
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 60,
                 fontWeight: FontWeight.bold,
               ),
@@ -76,13 +76,32 @@ class _HomeState extends State<Home> {
                   child: Column(
                 children: <Widget>[
                   Text(
-                      'รายงานนี้เป็นส่วนหนึ่งของรายวิชา 806 - 415 ฝึกงาน'),
+                      'รายงานนี้เป็นส่วนหนึ่งของรายวิชา 806 - 415 ฝึกงานคณะวิเทศศึกษา สาขาวิชาไทยศึกษา มหาวิทยาลัยสงขลาครินทร์ วิทยาเขตภูเก็ต ภาคเรียนที่ 3 ปีการศึกษา 2562',
+                      style: TextStyle(fontSize: 18, color: Colors.white)),
                 ],
               ))
             ],
           ),
+          choice(),
         ],
       ),
+    );
+  }
+
+  Widget choice() {
+    return Center(
+      child: Column(
+        children: <Widget>[
+          sentenceexp(),
+        ],
+      ),
+    );
+  }
+
+  Widget sentenceexp() {
+    return RaisedButton(
+      child: Text(" * ประโยคตัวอย่าง"),
+      onPressed: null,
     );
   }
 
@@ -101,7 +120,6 @@ class _HomeState extends State<Home> {
               ],
             ),
             medical(),
-            Text('Choice'),
           ],
         ),
       ),
