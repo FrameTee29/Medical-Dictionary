@@ -44,18 +44,24 @@ class _HomeState extends State<Home> {
 
   Widget sentenceEXP() {
     return RaisedButton(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(18.0),
+            side: BorderSide(color: Colors.orange)),
         color: Colors.orange,
         child: Text(" * ประโยคตัวอย่าง "),
-        onPressed: (){
+        onPressed: () {
           print("Click");
         });
   }
 
   Widget vocapEXP() {
     return RaisedButton(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(18.0),
+            side: BorderSide(color: Colors.orange)),
         color: Colors.orange,
         child: Text(" * คำศัพท์เกี่ยวกับโรคต่าง ๆ "),
-        onPressed: (){
+        onPressed: () {
           print("Click");
         });
   }
@@ -100,7 +106,9 @@ class _HomeState extends State<Home> {
               ))
             ],
           ),
-          sentenceEXP()
+          sentenceEXP(),
+          vocapEXP(),
+          sentenceEXP(),
         ],
       ),
     );
