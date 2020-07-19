@@ -121,6 +121,12 @@ class _HomeState extends State<Home> {
               ))
             ],
           ),
+           Container(
+             margin: EdgeInsets.only(top:20),
+             child: Text(" * คลิ๊กหัวข้อที่คุณสนใจ ",
+                style: TextStyle(
+                    fontSize: 12, color: Colors.white, fontFamily: 'Mali')),
+           ),
           Container(
             margin: EdgeInsets.only(top: 20),
             child: Column(
@@ -135,9 +141,7 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-          Text(" * คลิ๊กหัวข้อที่คุณสนใจ ",
-              style: TextStyle(
-                  fontSize: 12, color: Colors.white, fontFamily: 'Mali'))
+         
         ],
       ),
     );
